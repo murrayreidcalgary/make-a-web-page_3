@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<!-- This line is a test of an HTML comment. -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Murray's First Project</title>
+  <link rel="stylesheet" type="text/css" href="stage-1-exercise-1.css">
+</head>
+<body>
+<div class="chapter">
+<h1>STAGE 0 (Web Basics) NOTES</h1>
+
+<h2>How the Web Works</h2>
+<ol>
+  <li>Person (using...)</li>
+  <li>PC/laptop with browser (talking HTTP to...)</li>
+  <li>Internet (talking HTTP to...)</li>
+  <li>Servers</li>
+  </ol>
+<h2>HTML Elements</h2>
+<p> An element usually consists of:</p>
+  <blockquote>
+  &lt;opening tag&gt; content &lt;/closing tag&gt;
+  </blockquote>
+<p>In some cases an element may be a "void tag", where there is no content, nor a closing tag. EG the BReak tag</p>
+<p>Elements may be inline or block oriented.</p>
+<p>Tags consist of a mnemonic surrounded by a leading "less than" symbol and followed by a "greater than" symbol. The closing tag has a "forward slash" symbol preceding the mnemonic. Some opening tags have Atrributes that modify their behaviour - these appear after the mnemonic and before the closing "greater than" symbol.</p>
+<p> In the following list, the menemonic of the tag is given, followed by an indication of whether it is inline or block oriented in partentheses. This is followed with a short description of what the tag does. Where Attribute(s) are known they are listed on succeeding lines.</p>
+<div class="html-tags">
+<ul>
+  <li><b>b</b> (i) Bold</li>
+   <li><b>em</b> (i) EMphasis, italics</li>
+   <li><b>a</b> (i) Anchor; link to other stuff
+    <ul>
+      <li>href="url" where to go to</li>
+    </ul>
+   <li><b>img</b> (i) IMaGe; include a picture here
+    <ul>
+      <li>src="ref" where to find the picture</li>
+      <li>alt="text" description of the picture</li>
+    </ul>
+   <li><b>br</b> (i) BReak; start a new line; [VOID Tag]</li>
+   <li><b>p</b> (b) Paragraph</li>
+   <li><b>div</b> (b) create a block of stuff, a DIVision</li>
+   <li><b>span</b> (i) create a block of stuff that SPANs from here to the closing tag</li>
+   <li><b>strong</b> (i) provide STRONG emphasis to text</li>
+   <li><b>form</b> (b) create a FORM</li>
+   <li><b>head</b> (b) create a HEADing for the document</li>
+   <li><b>body</b> (b) create the BODY of the document</li>
+   <li><b>html</b> (b) the defifinition of the entire HTML document</li>
+  <li><b>h1</b>...<b>h6</b> (i) Heading levels 1...6</li>
+  <li><b>ol</b> (i?) Ordered List</li>
+  <li><b>ul</b> (i?) Unordered List</li>
+  <li><b>li</b> (i) LIst element</li>
+  <li><b>link</b>(i) LINK to style file or other content, but only within the HEAD tag</li>
+  <li><b>style</b>(i) STYLE definitions (ie CSS code), but only within the HEAD tag</li>
+  <li><b>blockquote</b> (b) create a BLOCK of QUOTation tExt
+  <br>
+  <b>NOTE:</b> This tag seems to have the implicit function of terminating a Paragraph block, resulting in a hanging end of Paragraph tag.
+  </li>
+</ul>
+</div>
+</div>
+<div class="chapter">
+<h1>STAGE 1 (STRUCTURE) NOTES</h1>
+<p>A page is organized as a set of boxes.
+Boxes have content.
+Elements (particularly block oriented ones) can be treated as boxes.
+Boxes have locations, sizes, colours, borders and other characteristics.
+Boxes are placed on a grid.</p>
+<p>Style is applied to boxes to change their sizes, colours and so forth.
+Style can be applied via stuff in the HEAD section - for simple projects.
+Style can instead/usually be applied by means of an external file (type CSS) via a LINK in the HEAD section.</p>
+<blockquote>
+<b>NOTES:</b>
+<br>&nbsp;&nbsp;DO NOT use a fully specified disk reference as Netscape failes to interpret it correctly; place the CSS file in the same directory as the HTML file.
+<br>&nbsp;&nbsp;DO NOT use spaces in file references.
+</blockquote>
+<p>Boxes can have boxes inside them.
+This nesting is reflected by indentation of the code.</p>
+<p>Use a language-specific editor to facilitate syntactically correct writing of HTML (and CSS) code.</p>
+<p>Boxes have 4 sizing characteristics (from inside layer to outside): content, padding, border, margin.</p>
+<p>The CSS attribute Box-sizing: border-box saves having to compute the sum of the various parts and lets you specify just one size for the inner three layers. Specify sizes in pixels (PX) or percent.</p>
+<p>Div takes the full width of a page. The attrribute (in CSS) Display:Flex allows the blocks to be positioned beside each other.</p>
+</div>
+<!-- end of the course notes pertaining to Stage 1 -->
+
+<div class="to-reviewer">
+<h2>NOTES on OBVIOUS STUFF</h2>
+<ol>
+<li>I do not make notes of stuff that (I think) I already know.
+</li>
+<li>
+Attempting to 'test' or 'review' based on your opinion of what constitutes adequate notes is making an assumption as to what the student doesn't know. I was certain ahead of time that you would fail my first submission by making this assumption. I submitted it in the hopes I was wrong. If you look at my bio I think you will find there is a reason I know a bunch of the concepts yo are looking for. Some of the following notes will also emphasize this point.
+</li>
+<li>
+HTML code should be organized in a structured manner.
+</li>
+<li>
+It should be noted that HTML is a programming languaage that has VERY LITTLE inherent structure. Programming languages like APL and SNOBALL (and even COBOL) have much more inherent structure. PERL also has more inherent structure.
+</li>
+<li>
+CSS code should be used to minimize the need to repeat some types of coding.
+</li>
+<li>
+Note that, largely, CSS provides the means for affecting similar types/groups of HTML elements, in a common way. To that end it should have code that gets applied more than once to the HTML code.
+</li>
+<li>
+CSS also provides a somewhat more 'modern' style for specifying display-specific attributes. Thus putting the bulk of style instructions into CSS seems reasonable even if not repeated in application to the HTML.
+</li>
+<li>
+Note that any programming language that allows functions and subroutines provides more and better structuring tools than does HTML. The bracketted components of CSS, at best, might be considered similar to function calls in other programming languages.
+</li>
+<li>
+The use of tags HTML, HEAD and BODY are in a sense the only real 'structure' provided by HTML. I did not mention these things in my notes as I had already documented them in lesson zero, as well as used them.
+</li>
+<li>
+DIV tags are a kind of structural element in HTML. In this project, they are used to group bocks of elements in a somewhat arbitrary manner. So far I have not seen a compelling need in this project for this construct. (The exception is this particlar DIV - I suspect I will have a need to push back to the reviewers in future as well.)
+</li>
+<li>
+I think use of LINK to connect files of HTML content is a much better structural technique. For example it would allow for the writing of an INDEX HTML document that shows the project as a set of lessons, each lesson in its own file. That would provides some clear structure to this project.
+</li>
+<li>
+Indentation and comments are a means of making code more legible/understandable to the human reader. These techniques have been around in programming since the advent of assembler code. IE since before your generation was even gestated. (Mine too, and I am nearing retirement.)
+</li>
+<li>
+Semantic tags are those that offer some implicit meaning and organization by their use. Things like H1, H2, etc and OL and UL. These are directly analagous to equivalent elements in text processing systems like phototypesetting, and word processing. Hence not really a new idea to me (or most students I suspect.)
+</li>
+<li>
+I did not mention "code, test, refine" as that is a basic, oft-repeated aspect of programming. I see it has not gone away - the tools still don't catch very much of the little errors that programmers make (and in my case, where I really don't like tools that try to do things for you, add errors).
+</li>
+<li>
+I would merely add that the 'rapid' style of program/app development is merely a formalization of the above mantra, such that a complete app is not attempted all at once, but broken down into smaller parts that get built at each cycle. Which gets us into the topic of 'design', a whole different skill.
+</li>
+<li>
+As a side note, I would point out that the course material did a very poor job of actually articulating that there was a 'design' that the instruction material was leading us to build. It would have been really nice if the course materials had provided something like a JPG file that showed what we were to be building, so that we could see how we were progressing toward that goal. Quizes that asked how close we were coming to that goal are a bit silly when you cannot see the goal! [How's that for a learning from the course so far?]
+</li>
+<li>
+It was a nice learning for me to learn that there are tools out there that can inspect your code to see if it meets standards. It was a little depressing to find out that what we had been taught was inadequate for passing such reviews. It was further depressing to know we were using stuff for HTML5, which is a standard that has not been ratified as yet, and that this was in fact the standard our code is being held to.
+</li>
+<li>
+BTW: is there a spell-checking app that can look at the code (text portion only) I write? A grammar checker for the text?
+</li>
+<li>
+Along the same lines it is depressing to know that the subject of incompatabilities between different browsers (and their versions/releases!) has not been addressed. That aspect has already cropped up in the implementation of this course - some stuff only shows correctly in IE, some shows well in IE and Netscape, while the feedback on our submissions only shows at all in Netscape.
+</li>
+<li>
+Yes I have resubmitted this file to the code checker site again.
+</li>
+<li>
+I hope that this long discourse will help to disabuse you of the idea that just because I did not make note of a matter does not mean I don't understand/know of the concept in question.
+</li>
+</ol>
+<p>
+Have a good day!
+</p>
+<br>
+</div>
+<!-- end of the (first) set of review feedback notes -->
+
+<div class="to-reviewer">
+<h2>MORE NOTES on OBVIOUS STUFF</h2>
+<ol>
+<li>
+I believe I already pointed out, in items V and VI above, the usefulness of using CSS to avoid repeated coding of the same stuff.
+</li>
+<li>
+That said, I believe my use of CSS to affect the style of bullet numbering throughout, the use of the 'chapter' divs, and the 'to-reviewer' divs, H1 characteristics, and so forth, all DEMONSTRATE that I understand the idea of reducing the coding effort. (Even though I personally do not like the options that I selected - I prefer the default styles in most cases - I made use of the capabilities to illustrate that I do indeed understand the power associated with this technique!)
+</li>
+<li>
+An examination of my HTML code will, I think, show very little repetition, aside from the syntactic aspects of defining tags.
+</li>
+<li>
+An examination of my CSS code will show that the things defined there affect multiple occurrences of tags and classes, indicating an understanding of the reduced coding effort achieved by such techniques.
+</li>
+<li>
+That being covered, let me be explicit and state that not repeating coding offers the following benefits:
+<!-- start of nested list; the depreciated method is where it starts after the closing tag of an element -->
+  <ul>
+  <li>saves typing</li>
+  <li>saves time</li>
+  <li>avoids introduction of mistakes in the repetitions</li>
+  <li>makes it easy to make changes to all occurrences (of a tag or class) with a single change in a single location</li>
+  <li>offers the opportunity to provide consistency in presentation style</li>
+  </ul>
+</li>
+<!-- end of the nested list (inside a list element) -->
+</ol>
+<p>
+I hope that this shows that I indeed understand the benefits of not repeating code.
+</p>
+</div>
+<!-- end of the second set of review feedback notes -->
+
+<div class="to-reviewer">
+<h2>STILL MORE NOTES on STUFF</h2>
+<ol>
+<li>
+Ah ha! It seems there is some (hidden) 'structure' in HTML5.
+Doing a little digging on the nature of nested lists, it turns out that in the past it was acceptable to start the nested list AFTER the close tag of the list element the new list pertained to. Now the nested list must be BEFORE the close tag of the list element to which it pertains.
+[I should have had the code checked, instead of assuming I was doing more stuff I knew enough about! But it displayed in the browser as I wanted it to. Sigh.]
+<br>
+ASIDE: Is there some little icon I can attach to my web page that indicates it has had the code reviewed (like there is for the CSS stuff)? It would be nice to have that memory jogger on my page, so I don't skip this step again.
+</li>
+<li>
+I would love to respond to the review comment "<b>...some factual errors regarding inline/block elements</b>" but I do not know what it refers to. Is it...
+<!-- start of a nested list (inside a list element) -->
+  <ul>
+  <li>...a reference to the nested list thing?
+  <br>
+  I have fixed that (and done it again here).
+  <br>
+  I would observe though, that I have no idea how this relates to the inline/block element distinction that is being referred to.
+  </li>
+  <li>...something else?
+  <br>
+  If it refers to some text/content in my web page, I have no idea of what it might be that I wrote that was incorrect.
+  <br>
+  [An email directly to me from the reviewer would certainly help clear this up. Otherwise more specifics in the review would be of help.]
+  <br>
+  Meanwhile, as I am not a mind-reader, and don't have the time to study every nuance of the HTML5 specifications to, perhaps, find what might be the aspect being referred to, I have not changed any of my previously written text.</li>
+  </ul>
+<!-- end of the nested list (inside a list element) -->
+</li>
+</ol>
+<p>
+I look forward to the next round of commentary/review. Thanks.
+</p>
+<br>
+</div>
+<!-- end of the third set of review feedback notes -->
+
+<div class="checks">
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<p>&nbsp;</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+</div>
+</body>
+</html>
