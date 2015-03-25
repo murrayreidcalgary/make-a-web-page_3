@@ -1,0 +1,49 @@
+/* This is a CSS comment.*/
+
+
+/*
+Comments are only to help PEOPLE read a code file. The
+computer ignores them.
+*/
+
+/* only turn the following on if you want to see
+what the boxes look like..
+* {
+   outline: 1px solid red !important;
+}
+*/
+
+.description {
+	color:green;
+	max-width: 705px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+h1 {
+	color: red;
+}
+h2 {
+	color: blue;
+}
+.checks {
+    display: flex;
+}
+.html-tags {
+	background-color: black;
+	color: white;
+}
+.to-reviewer {
+	color: blue;
+	font-weight: bold;
+	background-color: grey;
+}
+.chapter {
+	background-color: pink;
+}
+li {
+	list-style-type: upper-roman;
+}
